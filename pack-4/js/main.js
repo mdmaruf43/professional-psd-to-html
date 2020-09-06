@@ -1,6 +1,18 @@
 (function ($) {
 "use strict";
 
+// meanumenu
+$('#mobile-menu').meanmenu({
+	meanMenuContainer: '.mobile-menu',
+	meanScreenWidth: "992",
+});
+
+// One Page Nav
+var top_offset = $('.header-area').height() - 10;
+$('.main-menu nav ul').onePageNav({
+	currentClass: 'active',
+	scrolloffset: top_offset,
+})
 
 $('.owl-carousel').owlCarousel({
     loop:true,
@@ -8,7 +20,7 @@ $('.owl-carousel').owlCarousel({
 	items:1,
 	navText:['<i class="fa fa-angle-left"></i>','<i class="fa fa-angle-right"></i>'];
     nav:true,
-	dots:false;
+	dots:false,
     responsive:{
         0:{
             items:1

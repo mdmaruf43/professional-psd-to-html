@@ -488,6 +488,10 @@
 }
 /* Background Color */
 
+.header-bg {
+	background: #f5f8fa;
+}
+
 .gray-bg {
 	background: #f6f6f6;
 }
